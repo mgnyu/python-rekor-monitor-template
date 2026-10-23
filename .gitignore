@@ -1,1 +1,26 @@
+# python build artifacts and cache
 __pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+
+# test coverage reports
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# env vars
+.venv/
+venv/
+env/
+
+# logs and debug output (main.py -d)
+*.log
+debug_output/
+log_entry.json
+checkpoint.json
