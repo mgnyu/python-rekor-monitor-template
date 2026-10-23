@@ -1,0 +1,19 @@
+# Code owners are automatically requested for review on pull requests
+# that touch the matching files. Later rules take precedence.
+
+# Default owner for everything in the repository
+*                         @mgnyu
+
+# Verification logic: changes here can let forged artifacts pass
+/main.py                  @mgnyu
+/merkle_proof.py          @mgnyu
+/util.py                  @mgnyu
+
+# Supply-chain and security configuration
+/pyproject.toml           @mgnyu
+/poetry.lock              @mgnyu
+/.pre-commit-config.yaml  @mgnyu
+/.github/                 @mgnyu
+/SECURITY.md              @mgnyu
+
+/tests/                   @mgnyu

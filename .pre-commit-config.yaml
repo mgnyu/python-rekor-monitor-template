@@ -1,0 +1,11 @@
+repos:
+  - repo: local
+    hooks:
+      - id: trufflehog
+        name: TruffleHog secret scan
+        description: scan only changes since HEAD (the commit being made).
+        entry: trufflehog git file://. --since-commit HEAD --no-verification --fail --no-update
+        language: system
+        pass_filenames: false
+        always_run: true
+        stages: [pre-commit, pre-push]
